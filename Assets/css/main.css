@@ -449,7 +449,7 @@ body {
 /* Basic Styles
   ------------------------------------	*/
 body {
-  background: lightblue;
+  background: #F6F6F8;
   font-size: 14px;
   line-height: 1.6;
   font-family: 'Open Sans' sans-serif;
@@ -476,7 +476,7 @@ fieldset {
     padding: 50px 0 50px; } }
 
 section:nth-child(odd) {
-  background: lightblue;
+  background: #F6F6F8;
   padding-bottom: 100px; }
   section:nth-child(odd) h3 {
     color: #9a4038; }

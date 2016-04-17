@@ -202,7 +202,8 @@ figure {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -294,7 +295,8 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -319,7 +321,8 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -482,3 +485,47 @@ section:nth-child(odd) {
     color: #9a4038; }
 
 /*Status API Training Shop Blog About© 2016 GitHub, Inc. Terms Privacy Security Contact Help */
+.home-wrap header {
+  height: 60px;
+  background: lightblue;
+  padding: 10px 0; }
+  .home-wrap header .header-position {
+    position: fixed;
+    top: 0;
+    left: 318px;
+    bottom: 5px;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    background: lightblue;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .home-wrap header .site-nav ul {
+    list-style: none;
+    margin: 0 5px 0 5px;
+    padding: 24px 0 0 0;
+    text-align: center; }
+  .home-wrap header .site-nav li {
+    display: inline;
+    margin-right: 70px; }
+    .home-wrap header .site-nav li:last-child {
+      margin-right: 0; }
+  .home-wrap header .site-nav a {
+    display: inline-block;
+    margin: 0;
+    padding: 5px; }
+
+.home-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100vh; }

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic);
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -451,11 +452,15 @@ body {
 
 /* Basic Styles
   ------------------------------------	*/
+html,
+body {
+  min-height: 100vh; }
+
 body {
   background: #F6F6F8;
   font-size: 14px;
   line-height: 1.6;
-  font-family: 'Open Sans' sans-serif;
+  font-family: 'Fira Sans' sans-serif;
   color: #2E2D33;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
@@ -629,6 +634,20 @@ section.about {
   background-image: url(../img/about_us_bg.jpg);
   background-position: center top;
   background-size: cover; }
+  section.about h2 {
+    color: #3f3f42;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-left: 20px; }
+  section.about .home-lead {
+    padding-bottom: 180px;
+    margin: 0 30px; }
+
+@media (max-width: 640px) {
+  section.about h2 {
+    margin-left: auto;
+    margin-right: auto; } }
 
 .home-wrap {
   display: block; }
@@ -653,6 +672,16 @@ section.about {
     -webkit-flex-direction: rows;
         -ms-flex-direction: rows;
             flex-direction: rows; }
+  .home-sections .flex--column {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   .home-sections .flex--center {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -668,6 +697,10 @@ section.about {
         -ms-flex-order: -1;
             order: -1; }
 
+.col-0 {
+  width: 100%;
+  margin-right: 0; }
+
 .col-1 {
   max-width: 300px;
   margin: 0 10px; }
@@ -679,10 +712,18 @@ section.about {
 .col-50 {
   width: 50%; }
 
+.push-right {
+  margin-left: 330px; }
+
 @media (max-width: 640px) {
   .home-sections .flex {
     display: block; }
   .col-1 {
     max-width: 100%; }
   .col-50 {
-    width: auto; } }
+    width: auto; }
+  .push-right {
+    margin-left: 10px; } }
+
+.home-lead {
+  font-size: 18px; }

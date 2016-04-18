@@ -16,6 +16,10 @@
     display: flex
     flex-direction: rows
 
+  .flex--column
+    display: flex
+    flex-direction: column
+
   .flex--center
     justify-content: center
 
@@ -28,6 +32,11 @@
 
 
   // columns
+
+.col-0
+  width: 100%
+  margin-right: 0
+
 .col-1
   max-width: 300px
   margin: 0 10px
@@ -39,6 +48,8 @@
 .col-50
   width: 50%
 
+.push-right
+  margin-left: 330px
 
 @media (max-width: 640px)
   .home-sections .flex
@@ -49,3 +60,11 @@
 
   .col-50
     width: auto
+
+  .push-right
+    margin-left: 10px
+
+// Typography
+
+.home-lead
+  font-size: 18px

@@ -486,9 +486,8 @@ section:nth-child(odd) {
 
 /*Status API Training Shop Blog About© 2016 GitHub, Inc. Terms Privacy Security Contact Help */
 .home-wrap header {
-  height: 60px;
-  background: lightblue;
-  padding: 0 0 10px 0;
+  height: 50px;
+  padding: 10px 0 0 0;
   /*flexbox code */ }
   .home-wrap header .header-position {
     position: fixed;
@@ -496,7 +495,7 @@ section:nth-child(odd) {
     left: 0;
     bottom: 0;
     right: 0;
-    height: 70px;
+    height: 60px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -513,7 +512,8 @@ section:nth-child(odd) {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    background: white; }
   .home-wrap header .site-nav ul {
     list-style: none;
     margin: 0;
@@ -592,7 +592,7 @@ section:nth-child(odd) {
 @media (max-width: 775px) {
   .home-wrap header {
     width: auto;
-    padding: 10px 0; }
+    padding: 0; }
     .home-wrap header .header-position {
       position: relative;
       top: auto;
@@ -624,6 +624,11 @@ section:nth-child(odd) {
     -webkit-transform: translateY(0%);
         -ms-transform: translateY(0%);
             transform: translateY(0%); } }
+
+section.about {
+  background-image: url(../img/about_us_bg.jpg);
+  background-position: center top;
+  background-size: cover; }
 
 .home-wrap {
   display: block; }
@@ -665,17 +670,14 @@ section:nth-child(odd) {
 
 .col-1 {
   max-width: 300px;
-  margin: 0 10px;
-  background: pink; }
+  margin: 0 10px; }
 
 .col-2 {
   max-width: 620px;
-  margin: 0 10px;
-  background: honeydew; }
+  margin: 0 10px; }
 
 .col-50 {
-  width: 50%;
-  background: yellow; }
+  width: 50%; }
 
 @media (max-width: 640px) {
   .home-sections .flex {

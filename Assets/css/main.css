@@ -526,13 +526,14 @@ section:nth-child(odd) {
     text-align: center; }
   .home-wrap header .site-nav li {
     display: inline;
-    margin-right: 70px; }
+    margin-right: 90px; }
     .home-wrap header .site-nav li:last-child {
       margin-right: 0; }
   .home-wrap header .site-nav a {
-    display: inline-block;
     margin: 0;
-    padding: 5px; }
+    padding: 5px;
+    font-size: 15px;
+    letter-spacing: 0.5px; }
   .home-wrap header .mobile-nav-toggle {
     display: none;
     width: 50px;
@@ -630,24 +631,71 @@ section:nth-child(odd) {
         -ms-transform: translateY(0%);
             transform: translateY(0%); } }
 
+section.home-home {
+  background: white; }
+  section.home-home h1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #3f3f42;
+    font-size: 50px;
+    font-weight: 200;
+    line-height: 1.1;
+    letter-spacing: 2.5px;
+    margin: 0;
+    padding-top: 150px;
+    padding-bottom: 75px; }
+  section.home-home .home-description {
+    padding-bottom: 170px;
+    margin: 10px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 200;
+    letter-spacing: 2px; }
+
+@media (max-width: 640px) {
+  section.home-home h1 {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 10px; }
+  section.home-home .home-description {
+    text-align: justify;
+    width: auto;
+    padding-bottom: 50px; } }
+
 section.about {
   background-image: url(../img/about_us_bg.jpg);
   background-position: center top;
   background-size: cover; }
   section.about h2 {
     color: #3f3f42;
-    font-size: 60px;
-    font-weight: 400;
+    font-size: 50px;
+    font-weight: 300;
     line-height: 1.1;
-    margin-left: 20px; }
+    padding-top: 50px;
+    padding-bottom: 10px; }
   section.about .home-lead {
     padding-bottom: 180px;
-    margin: 0 30px; }
+    width: 60%;
+    margin: 10px;
+    text-align: justify; }
 
 @media (max-width: 640px) {
   section.about h2 {
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto; }
+  section.about .home-lead {
+    width: auto; } }
 
 .home-wrap {
   display: block; }
@@ -661,7 +709,7 @@ section.about {
       -ms-flex: 1;
           flex: 1; }
   .home-sections section {
-    padding: 50px 0; }
+    padding: 45px 0; }
   .home-sections .flex {
     display: -webkit-box;
     display: -webkit-flex;
@@ -691,6 +739,21 @@ section.about {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around; }
+  .home-sections .flex--space-between {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .home-sections .flex--end {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .home-sections .flex-start {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
   .home-sections .order-first {
     -webkit-box-ordinal-group: 0;
     -webkit-order: -1;
@@ -698,8 +761,8 @@ section.about {
             order: -1; }
 
 .col-0 {
-  width: 100%;
-  margin-right: 0; }
+  width: 340px;
+  margin: 0 10px; }
 
 .col-1 {
   max-width: 300px;
@@ -709,21 +772,29 @@ section.about {
   max-width: 620px;
   margin: 0 10px; }
 
+.col-3 {
+  width: 800px;
+  margin: 0 10px; }
+
 .col-50 {
   width: 50%; }
 
-.push-right {
-  margin-left: 330px; }
+.push-left {
+  margin-right: 150px; }
 
 @media (max-width: 640px) {
   .home-sections .flex {
     display: block; }
+  .col-0 {
+    max-width: 100%; }
   .col-1 {
     max-width: 100%; }
   .col-50 {
     width: auto; }
-  .push-right {
-    margin-left: 10px; } }
+  .col-3 {
+    width: auto; }
+  .push-left {
+    margin-right: 0; } }
 
 .home-lead {
-  font-size: 18px; }
+  font-size: 16px; }

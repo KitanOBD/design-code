@@ -1,5 +1,6 @@
 section.home-home
   background: white
+  //width: 100%
 
   h1
     display: flex
@@ -7,7 +8,7 @@ section.home-home
     justify-content: center
     color: #3f3f42
     font:
-      size: 50px
+      size: 38px
       weight: 200
     line-height: 1.1
     letter-spacing: 2.5px
@@ -17,23 +18,28 @@ section.home-home
 
 
   .home-description
+    display: flex
+    flex-direction: row
+    justify-content: center
     padding-bottom: 170px
     margin: 10px
-    text-align: center
     font:
-      size: 13px
+      size: 12px
       weight: 200
     letter-spacing: 2px
 
 
 @media (max-width:640px)
   section.home-home
+
     h1
       margin-left: auto
       margin-right: auto
-      padding: 50px 10px
+      max-width: 300px
+      padding: 50px 0
+
 
     .home-description
-      text-align: justify
-      width: auto
-      padding-bottom: 50px
+      //text-align: justify
+      //max-width: 300px
+      padding-bottom: 10px

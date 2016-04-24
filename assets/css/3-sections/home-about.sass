@@ -5,35 +5,52 @@ section.about
     size: cover
 
   h2
+    display: flex
+    flex-direction: row
+    justify-content: center
     color: #3f3f42
     font:
-      size: 50px
+      size: 40px
       weight: 300
     line-height: 1.1
-    padding-top: 50px
-    padding-bottom: 10px
+    padding-top: 25px
+    padding-bottom: 20px
+    letter-spacing: 1.5px
 
   .home-lead
     padding-bottom: 5px
-    width: 60%
-    margin: 10px 10px 5px 10px
+    margin-top: 10px
+    margin-bottom: 15px
     text-align: justify
+    font:
+      size: 16px
+    letter-spacing: 0.5px
+
+    p
+      &:last-child
+        margin-bottom: 0
 
   .read-more
     padding-bottom: 120px
     padding-left: 30px
-    width: 60%
     margin: 10px
     text-align: justify
+    font:
+      size: 13px
 
 @media (max-width:640px)
   section.about
+
     h2
-      margin-left: auto
-      margin-right: auto
+      margin: 10px 0
+      padding: 10px 0
+
 
     .home-lead
       width: auto
+      margin-left: 10px
+      margin-right: 10px
+      padding-top: 15px
 
     .read-more
       width: auto

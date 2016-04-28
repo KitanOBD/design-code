@@ -492,10 +492,10 @@ section:nth-child(odd) {
 /*Status API Training Shop Blog About© 2016 GitHub, Inc. Terms Privacy Security Contact Help */
 .home-wrap header {
   height: 50px;
-  padding: 10px 0 0 0;
+  padding: 5px 0 0 0;
+  background: white;
   /*flexbox code */ }
   .home-wrap header .header-position {
-    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
@@ -518,22 +518,43 @@ section:nth-child(odd) {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    background: white; }
+    position: fixed; }
   .home-wrap header .site-nav ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center; }
   .home-wrap header .site-nav li {
-    display: inline;
-    margin-right: 90px; }
+    margin-right: 70px;
+    -webkit-transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out; }
     .home-wrap header .site-nav li:last-child {
       margin-right: 0; }
+    .home-wrap header .site-nav li:hover {
+      -webkit-transform: scale(1.02);
+          -ms-transform: scale(1.02);
+              transform: scale(1.02); }
   .home-wrap header .site-nav a {
+    color: #3f3f42;
     margin: 0;
     padding: 5px;
     font-size: 15px;
     letter-spacing: 0.5px; }
+    .home-wrap header .site-nav a:hover {
+      color: #BD5248; }
   .home-wrap header .mobile-nav-toggle {
     display: none;
     width: 50px;
@@ -633,6 +654,8 @@ section:nth-child(odd) {
 
 section.home-home {
   background: white; }
+  section.home-home .home-title {
+    padding-bottom: 170px; }
   section.home-home h1 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -654,7 +677,7 @@ section.home-home {
     letter-spacing: 2.5px;
     margin: 0;
     padding-top: 150px;
-    padding-bottom: 75px; }
+    margin-bottom: 75px; }
   section.home-home .home-description {
     display: -webkit-box;
     display: -webkit-flex;
@@ -669,7 +692,6 @@ section.home-home {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-bottom: 170px;
     margin: 10px;
     font-size: 12px;
     font-weight: 200;
@@ -692,7 +714,10 @@ section.home-home {
 section.about {
   background-image: url(../img/about_us_bg.jpg);
   background-position: center top;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
+  section.about .about-sec {
+    padding-top: 50px; }
   section.about h2 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -711,7 +736,8 @@ section.about {
     font-size: 40px;
     font-weight: 300;
     line-height: 1.1;
-    padding-top: 25px;
+    margin-top: 0;
+    padding-top: 55px;
     padding-bottom: 20px;
     letter-spacing: 1.5px; }
   section.about .home-lead {
@@ -747,11 +773,13 @@ section.about {
 section.services {
   background-image: url(../img/our_services_bg.jpg);
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
   section.services .col-3 {
     margin: 0 10px;
     margin-bottom: 50px;
-    font-size: 20px; }
+    font-size: 20px;
+    padding-top: 60px; }
   section.services h2 {
     padding-top: 15px;
     padding-bottom: 10px;
@@ -765,9 +793,16 @@ section.services {
     list-style: none;
     text-align: right; }
   section.services li {
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    margin-right: 5px;
+    -webkit-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out; }
     section.services li:last-child {
       margin-bottom: 0; }
+    section.services li:hover {
+      -webkit-transform: scale(1.01);
+          -ms-transform: scale(1.01);
+              transform: scale(1.01); }
   section.services a {
     letter-spacing: 1px;
     font-size: 15px;
@@ -788,6 +823,37 @@ section.services {
     margin-left: auto;
     padding: 0; } }
 
+section.contact {
+  background-color: white; }
+
+.contact-div {
+  margin: 60px 10px;
+  padding-top: 60px;
+  padding-bottom: 200px; }
+  .contact-div h2 {
+    color: #3f3f42;
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 1.1;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px; }
+  .contact-div p {
+    margin: 10px;
+    width: 60%;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 20px; }
+
+@media (max-width: 640px) {
+  section.contact h2 {
+    margin: 10px 0;
+    padding: 10px 0;
+    text-align: center; }
+  section.contact .contact-para {
+    width: 100%;
+    margin: 10px;
+    padding-top: 15px; } }
+
 .home-wrap {
   display: block; }
   @media (max-width: 775px) {
@@ -800,7 +866,10 @@ section.services {
       -ms-flex: 1;
           flex: 1; }
   .home-sections section {
-    padding: 45px 0; }
+    padding-bottom: 45px; }
+  .home-sections .hover-space {
+    height: 50px;
+    background: none; }
   .home-sections .flex {
     display: -webkit-box;
     display: -webkit-flex;

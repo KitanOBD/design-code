@@ -3,12 +3,13 @@ section.services
     image: url(../img/our_services_bg.jpg)
     position: center
     size: cover
-
+    attachment: fixed
   .col-3
     margin: 0 10px
     margin-bottom: 50px
     font:
       size: 20px
+    padding-top: 60px
 
   h2
     padding-top: 15px
@@ -28,14 +29,21 @@ section.services
 
   li
     margin-bottom: 25px
+    margin-right: 5px
+    transition: 0.15s ease-in-out
 
     &:last-child
       margin-bottom: 0
+
+    &:hover
+      transform: scale(1.01)
+
 
   a
     letter-spacing: 1px
     font-size: 15px
     color: white
+
 
 
 @media (max-width:640px)

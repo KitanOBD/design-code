@@ -735,10 +735,16 @@ section.about {
     color: #3f3f42;
     font-size: 40px;
     font-weight: 300;
+    text-align: center;
     line-height: 1.1;
+<<<<<<< Updated upstream
     margin-top: 0;
     padding-top: 55px;
     padding-bottom: 20px;
+=======
+    padding-top: 50px;
+    padding-bottom: 10px;
+>>>>>>> Stashed changes
     letter-spacing: 1.5px; }
   section.about .home-lead {
     padding-bottom: 5px;
@@ -773,6 +779,7 @@ section.about {
 section.services {
   background-image: url(../img/our_services_bg.jpg);
   background-position: center;
+<<<<<<< Updated upstream
   background-size: cover;
   background-attachment: fixed; }
   section.services .col-3 {
@@ -853,6 +860,34 @@ section.contact {
     width: 100%;
     margin: 10px;
     padding-top: 15px; } }
+=======
+  background-size: cover; }
+  section.services h2 {
+    font-size: 50px;
+    font-weight: 300;
+    text-align: right;
+    line-height: 1.1;
+    letter-spacing: 1.5px; }
+  section.services .col-4 {
+    margin: auto; }
+    section.services .col-4 ul {
+      list-style: none;
+      text-align: right;
+      margin-top: 0;
+      padding-bottom: 60px; }
+    section.services .col-4 li {
+      margin-bottom: 15px; }
+      section.services .col-4 li:last-child {
+        margin-bottom: 0; }
+    section.services .col-4 a {
+      letter-spacing: 1px;
+      font-size: 15px; }
+
+@media (max-width: 640px) {
+  section.services h2 {
+    margin-left: auto;
+    margin-right: auto; } }
+>>>>>>> Stashed changes
 
 .home-wrap {
   display: block; }

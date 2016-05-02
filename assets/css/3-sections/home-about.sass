@@ -1,26 +1,30 @@
 section.about
   background:
-    image: url(../img/about_us_bg.jpg)
+    //image: url(../img/about_us_bg.jpg)
+    color: white
     position: center top
     size: cover
     attachment: fixed
 
+
   .about-sec
-    padding-top: 50px
+    padding-top: 30px
 
   h2
     display: flex
     flex-direction: row
     justify-content: center
     color: #3f3f42
+
     font:
-      size: 40px
+      family: 'Lato'
+      size: 37px
       weight: 300
-    line-height: 1.1
-    margin-top: 0
-    padding-top: 55px
-    padding-bottom: 20px
-    letter-spacing: 1.5px
+    line-height: 1.5
+    margin-top: auto
+    padding-top: 0
+    padding-bottom: 25px
+    letter-spacing: 1.8px
 
   .home-lead
     padding-bottom: 5px
@@ -28,14 +32,29 @@ section.about
     margin-bottom: 15px
     text-align: justify
     font:
-      size: 16px
+      size: 14.5px
+      weight: 200
     letter-spacing: 0.5px
 
     p
       &:last-child
         margin-bottom: 0
 
-  .read-more
+  .about-cta
+    display: flex
+    flex-direction: row
+    justify-content: center
+    text-align: center
+    font:
+      size: 13.5px
+    padding-top: 25px
+
+  .bold-text
+    display: block
+    padding: 0 3px
+    text-align: justify
+
+  //.read-more
     padding-bottom: 120px
     padding-left: 30px
     margin: 10px

@@ -13,7 +13,7 @@ $(".header, .hover-space").hover(function () {
 //smooth scrolling
 
 $(function() {
-	smoothScroll(600);
+	smoothScroll(700);
 
 });
 
@@ -55,7 +55,7 @@ function scrollBanner() {
   	var scrollPos = $(this).scrollTop();
   	$('.home-title').css({
   	  'top' : (scrollPos/3)+'px',
-  	  'opacity' : 1-(scrollPos/510)
+  	  'opacity' : 1-(scrollPos/300)
   	});
   	$('.home-home').css({
   	  'background-position' : 'center ' + (-scrollPos/2)+'px'
@@ -63,6 +63,31 @@ function scrollBanner() {
   });
 }
 scrollBanner();
+
+
+
+//sliding sections
+
+$(function() {
+
+  $('.s1').on('click', function(event){
+    $('.service-wrapper').toggleClass('open');
+
+  });
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
 
 
 // Deomonstrate modularity

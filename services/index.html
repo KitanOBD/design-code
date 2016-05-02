@@ -5,13 +5,28 @@ title: Your New Jekyll Site
 
 <div class="home-wrap">
 
-  <div class="home-sections">
-
-    {% include s1.html %}
-
-  </div>
+  {% include services-header.html %}
 
 </div>
 
-<script src="assets/js/jquery-2.2.3.min.js"></script>
-<script src="assets/js/functions.js"></script>
+<div class="services-wrap">
+
+  {% include ribbon-home.html %}
+
+
+
+  <div class="home-sections">
+
+    {% include s1.html %}
+    {% include s2.html %}
+    {% include s3.html %}
+    {% include s4.html %}
+    {% include s5.html %}
+  </div>
+
+
+
+</div>
+
+<script src="../assets/js/jquery-2.2.3.min.js"></script>
+<script src="../assets/js/functions.js"></script>

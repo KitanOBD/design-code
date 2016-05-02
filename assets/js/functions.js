@@ -3,7 +3,7 @@ $(function() {
       $('.header-position').hide();
 });
 
-$(".header, .hover-space").hover(function () {
+$(".header, .hover-position, hover-space").hover(function () {
     $(".header-position").stop().slideDown(300);
 }, function(){
     $(".header-position").stop().slideUp(300);
@@ -13,7 +13,7 @@ $(".header, .hover-space").hover(function () {
 //smooth scrolling
 
 $(function() {
-	smoothScroll(700);
+	smoothScroll(900);
 
 });
 
@@ -70,7 +70,7 @@ scrollBanner();
 
 $(function() {
 
-  $('.s1').on('click', function(event){
+  $('.s2').on('click', function(event){
     $('.service-wrapper').toggleClass('open');
 
   });

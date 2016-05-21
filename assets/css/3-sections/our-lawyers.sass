@@ -2,15 +2,12 @@ section.lawyers
   background:
     color: white
   padding: 50px 20px 20px 20px
-  height: 600px
 
   .panel
-
     padding-top: 10px
 
 
   .panels
-
     h2
       color: #3f3f42
       font:
@@ -22,9 +19,7 @@ section.lawyers
 
     ul
       list-style: none
-
       margin-left: 10px
-
       padding: 5px
 
     li
@@ -39,8 +34,6 @@ section.lawyers
         family: 'Lato'
         size: 15px
       letter-spacing: 1.8px
-
-    p
 
   .lawyer-carousel
     padding-top: 30px
@@ -57,14 +50,35 @@ section.lawyers
       margin-top: 0
 
   .people-image-container
-
     display: block
     width: 280px
     height: 390px
+    filter: grayscale(100%) contrast(80%)
+    margin: auto
+    padding: 0 10px
+
+  #apic
     background:
       image: url(/assets/img/ao_bg.jpg)
       size: cover
       position: center bottom
-    filter: grayscale(100%) contrast(80%)
-    margin: auto
-    padding: 0 10px
+
+  #bpic
+    background:
+      image: url(/assets/img/bd_bg.jpeg)
+      size: cover
+      position: center bottom
+
+@media (max-width: 640px)
+  section.lawyers
+    .panels
+      ul
+        margin-left: 0
+
+      .col-0
+        margin: 10px 0
+        width: 100%
+
+    .people-description-container
+      h2
+        text-align: center

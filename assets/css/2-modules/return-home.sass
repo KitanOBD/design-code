@@ -1,10 +1,13 @@
 .return-top
 
-  display: block
-  width: 120px
-  text-align: center
-  padding-bottom: 50px
-  padding-top: 40px
+  //display: block
+  //width: 120px
+  //text-align: center
+  display: flex
+  flex-direction: row
+  justify-content: center
+  padding-bottom: 30px
+  padding-top: 60px
   font:
     size: 15px
   letter-spacing: 2px
@@ -23,3 +26,7 @@
       position: center
       size: contain
     height: 20px
+
+@media (max-width:640px)
+  .return-top
+    padding-bottom: 0

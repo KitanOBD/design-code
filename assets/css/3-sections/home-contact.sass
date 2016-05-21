@@ -15,8 +15,6 @@ section.contact
       letter-spacing: 1.5px
       margin-bottom: 20px
 
-
-
     p
       width: 80%
       text-align: center
@@ -48,8 +46,6 @@ section.contact
   //contact form
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700)
-
-
 
 #form-main
   display: flex
@@ -113,7 +109,7 @@ textarea:focus
 #button-blue
   //font-family: 'Montserrat', Arial, Helvetica, sans-serif
   width: 400px
-  border: black solid 2px
+  border: black solid 1px
   cursor: pointer
   color: black
   font-size: 24px
@@ -137,11 +133,13 @@ textarea:focus
   background-color: white
 
 
-@media only screen and (max-width: 580px)
+@media (max-width: 580px)
+
   #form-div
   	left: 3%
-  	margin-right: 3%
   	width: 88%
-  	margin-left: 0
   	padding-left: 3%
   	padding-right: 3%
+
+  #button-blue
+    border: none

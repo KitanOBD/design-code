@@ -1,13 +1,13 @@
 mixin nav-content()
   ul
+    li: a(href="/index.html") HOME
     li: a(href="#s1") JOINT VENTURES
     li: a(href="#s2") DRAFTING & ADVISING
     li: a(href="#s3") SHIPPING LAW
     li: a(href="#s4") DUE DILLIGENCE 
     li: a(href="#s5") INTERNATIONAL REPRESENTATION
 
-.mobile-nav
-  +nav-content()
+
 
 header.header#s1
   .hover-position
@@ -16,3 +16,6 @@ header.header#s1
         +nav-content()
       
       .mobile-nav-toggle: span
+
+.mobile-nav
+  +nav-content()

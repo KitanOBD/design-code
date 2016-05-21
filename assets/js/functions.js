@@ -1,14 +1,25 @@
 //hide header hover
-$(function() {
-      $('.header-position').hide();
+$(document).ready(function(){
+   $(window).resize(function() {
+      if ($(window).width() <= 775) {
+         // Leave empty
+      }
+      else {
+        $(function() {
+              $('.header-position').hide();
+        });
+
+        $(".header, .hover-position, .hover-space").hover(function () {
+            $(".header-position").stop().slideDown(300);
+        }, function(){
+            $(".header-position").stop().slideUp(300);
+
+        });
+      }
+   });
 });
 
-$(".header, .hover-position, hover-space").hover(function () {
-    $(".header-position").stop().slideDown(300);
-}, function(){
-    $(".header-position").stop().slideUp(300);
 
-});
 
 
 
@@ -114,19 +125,6 @@ $(function() {
 
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // Deomonstrate modularity

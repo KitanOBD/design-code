@@ -6,8 +6,7 @@ mixin nav-content()
     li: a(href="/lawyers" target="_blank") OUR LAWYERS
     li: a(href="/index.html#contact_us") CONTACT US
 
-.mobile-nav
-  +nav-content()
+
 
 header.header#home
   .hover-position
@@ -16,3 +15,6 @@ header.header#home
         +nav-content()
       
       .mobile-nav-toggle: span
+
+.mobile-nav
+  +nav-content()

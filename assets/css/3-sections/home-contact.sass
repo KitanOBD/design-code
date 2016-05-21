@@ -38,14 +38,22 @@ section.contact
       text-align: center
 
 
-    .contact-para
-      width: 100%
-      margin: 10px
-      padding-top: 15px
-
   //contact form
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700)
+
+@mixin placeholder()
+  input::-webkit-input-placeholder
+    @content
+  input:-moz-placeholder
+    @content
+  input::-moz-placeholder
+    @content
+  input:-ms-input-placeholder
+    @content
+
+@include placeholder()
+  position: relative
 
 #form-main
   display: flex
@@ -66,12 +74,8 @@ section.contact
 
 .feedback-input
   color: black
-  //font-family: Helvetica Arial sans-serif
-  //font-weight: 500
   font-size: 15px
   border-radius: 0
-  //line-height: 22px
-  background-color: white
   padding: 10px 10px 10px 20px
   margin-bottom: 10px
   width: 100%
@@ -80,7 +84,6 @@ section.contact
 
 
 .feedback-input:focus
-  background: #fff
   box-shadow: 0
   border: 1px solid
   color: black
@@ -104,7 +107,7 @@ input:hover,
 textarea:hover,
 input:focus,
 textarea:focus
-  background-color:white
+  //background-color:white
 
 #button-blue
   //font-family: 'Montserrat', Arial, Helvetica, sans-serif

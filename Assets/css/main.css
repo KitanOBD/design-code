@@ -768,7 +768,7 @@ section:nth-child(odd) {
       -webkit-transition: 0.3s ease-in-out;
       transition: 0.3s ease-in-out; }
 
-@media (max-width: 640px) {
+@media (max-width: 775px) {
   .services-wrap header {
     display: none; } }
 
@@ -1101,6 +1101,9 @@ textarea {
   #button-blue {
     border: none; } }
 
+.home-wrap .sh {
+  display: none; }
+
 .home-wrap .hover-position {
   height: 50px;
   position: fixed;
@@ -1240,6 +1243,8 @@ textarea {
     margin-bottom: 10px; }
 
 @media (max-width: 900px) {
+  .home-wrap .sh {
+    display: inline; }
   .home-wrap header {
     width: auto;
     padding: 0; }
@@ -1467,8 +1472,12 @@ section.lawyers {
   padding: 50px 20px 20px 20px; }
   section.lawyers .panel {
     padding-top: 10px; }
-  section.lawyers #navigation h2 {
-    font-size: 40px; }
+  section.lawyers #navigation {
+    margin: auto 0;
+    margin-top: 70px; }
+    section.lawyers #navigation h2 {
+      font-size: 40px;
+      margin-left: 10px; }
   section.lawyers .panels h2 {
     color: #3f3f42;
     font-family: 'Lato';
@@ -1526,6 +1535,7 @@ section.lawyers {
   section.lawyers .people-description-container h2 {
     text-align: center; }
   section.lawyers #navigation {
+    margin: 20px 0;
     text-align: center; } }
 
 section.footer {
@@ -1554,7 +1564,7 @@ section.footer {
 
 section.service-1 {
   background: white;
-  padding-top: 45px; }
+  padding-top: 90px; }
   section.service-1 .col-5 {
     padding-bottom: 20px; }
   section.service-1 h2 {
@@ -1638,17 +1648,19 @@ section.service-1 {
       transition: 0.3s ease-in-out; }
 
 @media (max-width: 640px) {
-  section.service-1 .col-5 {
-    margin-bottom: 0; }
-  section.service-1 h2 {
-    width: auto;
-    margin: 25px 0;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center; }
-  section.service-1 .col-0 {
-    display: none; } }
+  section.service-1 {
+    padding-top: 45px; }
+    section.service-1 .col-5 {
+      margin-bottom: 0; }
+    section.service-1 h2 {
+      width: auto;
+      margin: 25px 0;
+      padding: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center; }
+    section.service-1 .col-0 {
+      display: none; } }
 
 section.service-2 {
   background: white;

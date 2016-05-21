@@ -8,6 +8,7 @@
     bottom: 0
     right: 0
     background: none
+    z-index: 1
 
   header
     height: 50px
@@ -26,8 +27,9 @@
       flex-direction: row
       justify-content: center
       align-items: center
-      position: fixed
+      position: relative
       background: white
+
     .site-nav
       ul
         display: flex
@@ -107,8 +109,10 @@
   // Mobile Nav
   .mobile-nav
     display: none
+    position: fixed
     width: 100%
     background: white
+    padding: 30px 0
     transform: translateY(-100%)
     transition: all 0.3s ease-in-out
 
@@ -121,6 +125,18 @@
       text-align: center
       margin-bottom: 10px
 
+    a
+      color: #3f3f42
+      margin: 0
+      padding: 5px
+      font-size: 14px
+      font:
+        family: 'Lato'
+        weight: 400
+      letter-spacing: 2px
+
+      &:hover
+        color: $accent-colour
 
 
 @media (max-width: 775px)
@@ -144,6 +160,9 @@
       .mobile-nav-toggle
         display: flex
 
+
     .mobile-nav.is-open
       display: block
+      position: fixed
       transform: translateY(0%)
+      z-index: 1

@@ -1176,8 +1176,9 @@ textarea {
     margin: 0;
     padding: 5px;
     font-family: 'Lato';
-    font-size: 13px;
+    font-size: 12.9px;
     font-margin: 400px;
+    line-height: 1.1;
     letter-spacing: 2px; }
     .home-wrap header .ser-nav a:hover {
       color: #BD5248; }
@@ -1564,7 +1565,7 @@ section.footer {
 
 section.service-1 {
   background: white;
-  padding-top: 90px; }
+  padding-top: 100px; }
   section.service-1 .col-5 {
     padding-bottom: 20px; }
   section.service-1 h2 {
